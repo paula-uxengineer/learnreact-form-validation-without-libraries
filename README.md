@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+Real time form validation
+>This app provides a user registration form with real-time validation for name, email, password strength, and role selection, ensuring data integrity and immediate user feedback.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Real-time Input Validation: Validates email format, password length, and required fields as you type.
+- Password Strength Check: Displays error messages for passwords with less than 8 characters.
+- Dynamic Role Selection: Offers predefined roles with validation.
+- Form Submission: Submits and clears the form upon successful validation.
 
-Currently, two official plugins are available:
+### Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1 - Clone the repository:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/your-username/registration-form-app.git
+cd registration-form-app
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2 - Install dependencies:
+
+- Using npm:
+
+```bash
+npm install
+```
+
+- Or using Yarn:
+
+```bash
+yarn install
+```
+
+### Initialice project:
+
+- Start the development server: (using npm)
+
+```bash
+npm run dev
+```
+
+- Or using Yarn:
+
+```bash
+yarn dev
+```
+
+Open the app: Visit http://localhost:5173 in your browser to see the app in action.
+
+### Technologies
+
+- React: A JavaScript library for building user interfaces.
+- TypeScript: A superset of JavaScript that adds static typing.
+- Vite: A fast build tool and development server for modern web projects.
+- SWC: A super-fast compiler for JavaScript and TypeScript.
+
+Code Structure
+
+- src/App.tsx: Main component that renders the form and manages state.
+- src/validateEmail.ts: Utility function for validating email addresses.
+- src/components/PasswordErrorMessage.tsx: Displays error message for weak passwords.
+- public/: Contains static files like index.html.
