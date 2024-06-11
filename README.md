@@ -12,8 +12,8 @@ Features
 1 - Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/registration-form-app.git
-cd registration-form-app
+git clone https://github.com/paula-uxengineer/learnreact-form-validation-without-libraries.git
+cd learnreact-form-validation-without-libraries
 ```
 
 2 - Install dependencies:
