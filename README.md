@@ -1,4 +1,4 @@
-Real time form validation
+# Real time form validation
 >This app provides a user registration form with real-time validation for name, email, password strength, and role selection, ensuring data integrity and immediate user feedback.
 Features
 
